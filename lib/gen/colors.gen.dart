@@ -20,6 +20,12 @@ class ColorName {
   /// Color: #141313
   static const Color backgroundDark = Color(0xFF141313);
 
+  /// Color: #FF4747
+  static const Color balanceNegative = Color(0xFFFF4747);
+
+  /// Color: #09BC45
+  static const Color balancePositive = Color(0xFF09BC45);
+
   /// Color: #6200EE
   static const Color buttonBackground = Color(0xFF6200EE);
 

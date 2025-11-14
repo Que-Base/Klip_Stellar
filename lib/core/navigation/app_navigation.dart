@@ -87,7 +87,7 @@ class NavigationMenu extends ConsumerWidget {
               isSelected: indexNavigation == 3,
               onTap: () {
                 ref.read(navigationProvider.notifier).navigate(3);
-                context.go(AppRoutes.homeRoute);
+                context.go(AppRoutes.settings);
               },
             ),
           ],

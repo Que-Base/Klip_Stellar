@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:klip/core/navigation/app_navigation.dart';
 import 'package:klip/features/home/presentation/home_view.dart';
 import 'package:klip/features/saving/presentation/savings_view.dart';
+import 'package:klip/features/settings/presentation/settings_view.dart';
 import 'package:klip/features/transaction/presentation/transaction_list_view.dart';
 import 'package:klip/features/transaction/presentation/transfer/success_transaction_view.dart';
 import 'package:klip/features/transaction/presentation/transfer/wallet_selection_view.dart';
@@ -16,6 +17,8 @@ class AppRoutes {
   static const String transaction = "/main/transaction";
 
   static const String savings = "/main/savings";
+
+  static const String settings = "/main/settings";
 
   static const String transactionSuccessful = "/transaction/success";
   static const String transactionWalletSelection =
@@ -51,9 +54,9 @@ class AppRouter {
                 const NoTransitionPage(child: TransactionListView()),
           ),
           GoRoute(
-            path: AppRoutes.homeRoute,
+            path: AppRoutes.settings,
             pageBuilder: (context, state) =>
-                const NoTransitionPage(child: HomeView()),
+                const NoTransitionPage(child: SettingsView()),
           ),
         ],
       ),

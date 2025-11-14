@@ -44,4 +44,9 @@
     <color name="check_linear_1">#09BC45</color>
     <color name="check_linear_2">#057029</color>
     <color name="check_linear_3">#FF8D5D</color>
+
+    <!-- Balance Colors -->
+    <color name="balance_negative">#FF4747</color>
+    <color name="balance_positive">#09BC45</color>
+    
 </resources>
