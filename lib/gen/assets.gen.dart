@@ -32,9 +32,17 @@ class $AssetsSvgIconsGen {
   SvgGenImage get backIcon =>
       const SvgGenImage('assets/svg_icons/back_icon.svg');
 
+  /// File path: assets/svg_icons/caret_down_icon.svg
+  SvgGenImage get caretDownIcon =>
+      const SvgGenImage('assets/svg_icons/caret_down_icon.svg');
+
   /// File path: assets/svg_icons/check_icon.svg
   SvgGenImage get checkIcon =>
       const SvgGenImage('assets/svg_icons/check_icon.svg');
+
+  /// File path: assets/svg_icons/disconnect_settings_icon.svg
+  SvgGenImage get disconnectSettingsIcon =>
+      const SvgGenImage('assets/svg_icons/disconnect_settings_icon.svg');
 
   /// File path: assets/svg_icons/download_icon.svg
   SvgGenImage get downloadIcon =>
@@ -44,9 +52,21 @@ class $AssetsSvgIconsGen {
   SvgGenImage get dropDownIcon =>
       const SvgGenImage('assets/svg_icons/drop_down_icon.svg');
 
+  /// File path: assets/svg_icons/ellipse_1.svg
+  SvgGenImage get ellipse1 =>
+      const SvgGenImage('assets/svg_icons/ellipse_1.svg');
+
   /// File path: assets/svg_icons/home_tab_icon.svg
   SvgGenImage get homeTabIcon =>
       const SvgGenImage('assets/svg_icons/home_tab_icon.svg');
+
+  /// File path: assets/svg_icons/notification_settings_icon.svg
+  SvgGenImage get notificationSettingsIcon =>
+      const SvgGenImage('assets/svg_icons/notification_settings_icon.svg');
+
+  /// File path: assets/svg_icons/privacy_settings_icon.svg
+  SvgGenImage get privacySettingsIcon =>
+      const SvgGenImage('assets/svg_icons/privacy_settings_icon.svg');
 
   /// File path: assets/svg_icons/saving_tab_icon.svg
   SvgGenImage get savingTabIcon =>
@@ -59,6 +79,10 @@ class $AssetsSvgIconsGen {
   /// File path: assets/svg_icons/share_icon.svg
   SvgGenImage get shareIcon =>
       const SvgGenImage('assets/svg_icons/share_icon.svg');
+
+  /// File path: assets/svg_icons/theme_settings_icon.svg
+  SvgGenImage get themeSettingsIcon =>
+      const SvgGenImage('assets/svg_icons/theme_settings_icon.svg');
 
   /// File path: assets/svg_icons/transaction_tab_icon.svg
   SvgGenImage get transactionTabIcon =>
@@ -76,20 +100,31 @@ class $AssetsSvgIconsGen {
   SvgGenImage get walletScanIcon =>
       const SvgGenImage('assets/svg_icons/wallet_scan_icon.svg');
 
+  /// File path: assets/svg_icons/wallet_settings_icon.svg
+  SvgGenImage get walletSettingsIcon =>
+      const SvgGenImage('assets/svg_icons/wallet_settings_icon.svg');
+
   /// List of all assets
   List<SvgGenImage> get values => [
     backIcon,
+    caretDownIcon,
     checkIcon,
+    disconnectSettingsIcon,
     downloadIcon,
     dropDownIcon,
+    ellipse1,
     homeTabIcon,
+    notificationSettingsIcon,
+    privacySettingsIcon,
     savingTabIcon,
     settingTabIcon,
     shareIcon,
+    themeSettingsIcon,
     transactionTabIcon,
     waitingIcon,
     walletIcon,
     walletScanIcon,
+    walletSettingsIcon,
   ];
 }
 

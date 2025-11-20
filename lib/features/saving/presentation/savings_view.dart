@@ -48,6 +48,7 @@ class SavingsView extends ConsumerWidget {
                     // ~ Saving CHart
                     Center(
                       child: SizedBox(width: 171.w, height: 171.h),
+                      
                     ),
 
                     SizedBox(height: 10.h),
@@ -91,7 +92,7 @@ class SavingsView extends ConsumerWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 10,
-                  vertical: 15,
+                  vertical: 10,
                 ),
                 child: Text(
                   "Stake up to \$2000 in your  Savings wallet to earn 0.3% of your stock",

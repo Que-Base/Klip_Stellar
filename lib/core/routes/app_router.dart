@@ -1,6 +1,11 @@
 import 'package:go_router/go_router.dart';
 import 'package:klip/core/navigation/app_navigation.dart';
 import 'package:klip/features/home/presentation/home_view.dart';
+import 'package:klip/features/onboarding/presentation/onboarding_page_1.dart';
+import 'package:klip/features/onboarding/presentation/onboarding_page_2.dart';
+import 'package:klip/features/onboarding/presentation/onboarding_root_view.dart';
+import 'package:klip/features/profile/auth/presentation/login_view.dart';
+import 'package:klip/features/profile/auth/presentation/signup_view.dart';
 import 'package:klip/features/saving/presentation/savings_view.dart';
 import 'package:klip/features/settings/presentation/settings_view.dart';
 import 'package:klip/features/transaction/presentation/transaction_list_view.dart';
@@ -9,6 +14,13 @@ import 'package:klip/features/transaction/presentation/transfer/wallet_selection
 import 'package:klip/shared/widget/empty_view.dart';
 
 class AppRoutes {
+  static const String onboardingRoot = "/onboarding";
+  static const String onboardingPage_1 = "page_1";
+  static const String onboardingPage_2 = "page_2";
+
+  static const String onboardingLogin = "login";
+  static const String onboardingSignUp = "sign_up";
+
   static const String mainApp = "/main";
   static const String emptyView = "/empty_view";
 
@@ -27,9 +39,41 @@ class AppRoutes {
 
 class AppRouter {
   static final router = GoRouter(
-    initialLocation: AppRoutes.homeRoute,
+    // initialLocation: AppRoutes.homeRoute,
+    initialLocation: AppRoutes.onboardingRoot,
 
     routes: [
+      GoRoute(
+        path: AppRoutes.onboardingRoot,
+        builder: (ctx, state) => const OnboardingRootPage(),
+        routes: [
+          GoRoute(
+            path: AppRoutes.onboardingPage_1,
+            name: AppRoutes.onboardingPage_1,
+            builder: (context, state) => const OnboardingPage1(),
+          ),
+          GoRoute(
+            path: AppRoutes.onboardingPage_2,
+            name: AppRoutes.onboardingPage_2,
+            builder: (context, state) => const OnboardingPage2(),
+          ),
+
+          // ~ Login
+          GoRoute(
+            path: AppRoutes.onboardingLogin,
+            name: AppRoutes.onboardingLogin,
+            builder: (context, state) => const LoginView(),
+          ),
+
+          // ~ SignUp
+          GoRoute(
+            path: AppRoutes.onboardingSignUp,
+            name: AppRoutes.onboardingSignUp,
+            builder: (context, state) => const SignupView(),
+          ),
+        ],
+      ),
+
       GoRoute(
         path: AppRoutes.emptyView,
         builder: (context, state) => EmptyView(),

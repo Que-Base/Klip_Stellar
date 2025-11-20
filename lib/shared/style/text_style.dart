@@ -17,9 +17,24 @@ class AppTextStyle {
     fontWeight: FontWeight.w500,
   );
 
+  static final TextStyle r12 = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.normal,
+  );
+
+  static final TextStyle r14 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.normal,
+  );
+
   static final TextStyle r16 = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.normal,
+  );
+
+  static final TextStyle sb12 = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
   );
 
   static final TextStyle sb16 = TextStyle(
@@ -32,8 +47,18 @@ class AppTextStyle {
     fontWeight: FontWeight.bold,
   );
 
+  static final TextStyle b20 = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.bold,
+  );
+
   static final TextStyle b32 = TextStyle(
     fontSize: 32.sp,
+    fontWeight: FontWeight.bold,
+  );
+
+    static final TextStyle b40 = TextStyle(
+    fontSize: 40.sp,
     fontWeight: FontWeight.bold,
   );
 }

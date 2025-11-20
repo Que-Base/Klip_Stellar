@@ -83,7 +83,7 @@ class NavigationMenu extends ConsumerWidget {
               index: 3,
               activeIcon: Assets.svgIcons.settingTabIcon.path,
               inactiveIcon: Assets.svgIcons.settingTabIcon.path,
-              label: 'Profile',
+              label: 'Settings',
               isSelected: indexNavigation == 3,
               onTap: () {
                 ref.read(navigationProvider.notifier).navigate(3);
