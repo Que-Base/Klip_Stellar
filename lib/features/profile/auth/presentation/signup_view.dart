@@ -28,14 +28,14 @@ class SignupView extends HookConsumerWidget {
               child: Padding(
                 padding:
                     EdgeInsets.symmetric(horizontal: 26.0) +
-                    const EdgeInsets.only(top: 28),
+                    const EdgeInsets.only(top: 24),
                 child: Column(
                   children: [
                     Text("Sign Up", style: AppTextStyle.b20),
                     SizedBox(height: 12.h),
 
                     Text("Create an account", style: AppTextStyle.r14),
-                    SizedBox(height: 42.h),
+                    SizedBox(height: 30.h),
 
                     // ~ Email TextField
                     TextField(
@@ -79,7 +79,7 @@ class SignupView extends HookConsumerWidget {
                       onTap: () {},
                       child: Text("Sign Up", style: AppTextStyle.sb16),
                     ),
-                    SizedBox(height: 13.h),
+                    // SizedBox(height: 13.h),
 
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,

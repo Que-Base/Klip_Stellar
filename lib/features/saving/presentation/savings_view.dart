@@ -102,7 +102,7 @@ class SavingsView extends ConsumerWidget {
               ),
             ),
 
-            const SizedBox(height: 105),
+            const SizedBox(height: 50),
             _transctionBlock(true),
           ],
         ),

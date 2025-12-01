@@ -143,6 +143,7 @@ class _OnboardingRootPageState extends ConsumerState<OnboardingRootPage> {
             ),
           ),
 
+          /** 
           Positioned(
             bottom: 20,
             right: 20,
@@ -182,7 +183,8 @@ class _OnboardingRootPageState extends ConsumerState<OnboardingRootPage> {
                 icon: Assets.svgIcons.caretDownIcon.svg(),
               ),
             ),
-          ),
+          ), 
+        **/
         ],
       ),
     );

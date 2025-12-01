@@ -10,7 +10,10 @@ PreferredSizeWidget klipsAppBar({
   return AppBar(
     centerTitle: false,
     leading: switch (appBarStyle) {
-      AppBarStyle.type_1 => CircleAvatar(),
+      AppBarStyle.type_1 => Padding(
+        padding: const EdgeInsets.only(left: 18),
+        child: CircleAvatar(),
+      ),
       _ => null,
     },
     title: switch (appBarStyle) {

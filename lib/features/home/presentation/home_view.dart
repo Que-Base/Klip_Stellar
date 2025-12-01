@@ -211,7 +211,7 @@ class HomeView extends ConsumerWidget {
 
               // ~ Empty Transaction state
               const SizedBox(
-                height: 97,
+                height: 50,
               ), // ~ Would not be availible on transaction
               _transctionBlock(true),
             ],
